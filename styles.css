@@ -76,7 +76,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(8, 27, 41, 0.25) 0%, rgba(8, 27, 41, 0.45) 50%, rgba(8, 27, 41, 0.75) 100%);
+  background: linear-gradient(180deg, rgba(4, 14, 22, 0.55) 0%, rgba(4, 14, 22, 0.72) 50%, rgba(4, 14, 22, 0.9) 100%);
   pointer-events: none;
 }
 
@@ -148,11 +148,13 @@ body {
   height: clamp(46px, 5.2vw, 50px);
   max-width: 480px;
   flex: 1;
-  background: #ffffff;
+  background: rgba(8, 27, 41, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-radius: 999px;
   padding: 4px 14px;
-  box-shadow: 0 10px 30px rgba(8, 27, 41, 0.08);
-  border: 1px solid var(--card-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -164,9 +166,9 @@ body {
   font-weight: 600;
   font-size: clamp(13px, 1.4vw, 15px);
   letter-spacing: -0.01em;
-  color: var(--nav-text);
+  color: #ffffff;
   text-decoration: none;
-  opacity: 0.65;
+  opacity: 0.8;
   transition: opacity 0.2s ease, color 0.2s ease;
   display: flex;
   flex-direction: column;
@@ -181,7 +183,7 @@ body {
 
 .nav-link.active {
   opacity: 1;
-  color: var(--heading);
+  color: #ffffff;
 }
 
 .nav-link.active::after {
@@ -200,14 +202,14 @@ body {
 .signin-btn {
   height: clamp(46px, 5.2vw, 50px);
   padding: 0 clamp(18px, 2vw, 26px);
-  background: var(--heading);
+  background: var(--orange);
   color: #ffffff;
   border-radius: 999px;
   font-family: var(--font-sans);
-  font-weight: 600;
+  font-weight: 700;
   font-size: clamp(13px, 1.4vw, 15px);
   text-decoration: none;
-  box-shadow: 0 10px 25px rgba(8, 27, 41, 0.15);
+  box-shadow: 0 10px 25px rgba(241, 90, 36, 0.35);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -217,9 +219,9 @@ body {
 }
 
 .signin-btn:hover {
-  background: var(--orange);
+  background: var(--orange-hover);
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(241, 90, 36, 0.3);
+  box-shadow: 0 12px 30px rgba(241, 90, 36, 0.5);
 }
 
 .burger-btn {
