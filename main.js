@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const solutionData = [
     {
       num: '01',
-      title: 'Pallet racking',
-      text: 'Selective, double-deep and high-density layouts designed around your pallets, equipment and throughput.',
+      title: 'Pallet Racking Systems',
+      text: 'Heavy-duty Selective, Double-Deep, and High-Density Drive-in layouts engineered for maximum load capacity.',
       list: [
         'Pallet dimensions and load weights',
         'Handling equipment and aisle access',
@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       num: '02',
-      title: 'Industrial shelving',
-      text: 'Organised, accessible storage for components, spares and fast-moving inventory.',
+      title: 'Industrial Shelving & Components',
+      text: 'Organised, accessible multi-tier shelving for components, spares, and fast-moving inventory.',
       list: [
         'Component dimensions and picking frequency',
         'Shelf access and replenishment flow',
@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       num: '03',
-      title: 'Mezzanine systems',
-      text: 'Create productive floor area within your existing building envelope.',
+      title: 'Mezzanine Floor Systems',
+      text: 'Custom-built heavy structural platform floors to double or triple usable area within existing buildings.',
       list: [
         'Available clear height and floor constraints',
         'Intended use and access requirements',
@@ -33,12 +33,22 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       num: '04',
-      title: 'Automated warehouses',
-      text: 'Storage structures engineered to work with conveyors, shuttles and material-handling systems.',
+      title: 'Automated Warehouses & AS/RS',
+      text: 'Precision storage structures engineered to integrate seamlessly with stacker cranes, shuttles, and conveyors.',
       list: [
         'Equipment interfaces and tolerances',
         'Throughput and movement patterns',
         'Maintenance access and operating clearances'
+      ]
+    },
+    {
+      num: '05',
+      title: 'Heavy-Duty Storage & PEB',
+      text: 'Pre-Engineered Building (PEB) storage structures and Cantilever racks engineered for heavy industrial loads.',
+      list: [
+        'High load capacity & structural steel specs',
+        'Weather resistance & seismic compliance',
+        'Custom span, height & cantilever arms'
       ]
     }
   ];
