@@ -644,12 +644,12 @@ body {
 }
 
 .explorer-btn {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #081b29;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #ffffff;
   font-family: var(--font-sans);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 14px 18px;
   border-radius: 12px;
   cursor: pointer;
@@ -661,7 +661,7 @@ body {
 }
 
 .explorer-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: #0f2c42;
   border-color: var(--orange);
   color: #ffffff;
 }
@@ -670,13 +670,13 @@ body {
   background: var(--orange);
   border-color: var(--orange);
   color: #ffffff;
-  box-shadow: 0 8px 20px rgba(241, 90, 36, 0.35);
+  box-shadow: 0 8px 20px rgba(241, 90, 36, 0.4);
 }
 
 .explorer-right {
-  background: rgba(15, 35, 52, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: #081b29;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   border-radius: 18px;
   padding: 28px;
   display: flex;
@@ -961,8 +961,8 @@ body {
 }
 
 .contact-form {
-  background: rgba(5, 18, 28, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #04101a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   padding: 32px;
   display: flex;
@@ -993,29 +993,42 @@ body {
   flex-direction: column;
   gap: 6px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #081b29;
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 10px;
   padding: 12px 14px;
   color: #ffffff;
   font-family: var(--font-sans);
   font-size: 14px;
+  font-weight: 500;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form select option {
+  background: #081b29;
+  color: #ffffff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #cbd5e1;
+  opacity: 0.9;
 }
 
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
   border-color: var(--orange);
-  box-shadow: 0 0 0 3px rgba(241, 90, 36, 0.25);
+  box-shadow: 0 0 0 3px rgba(241, 90, 36, 0.3);
 }
 
 .contact-form textarea {
@@ -1027,8 +1040,9 @@ body {
   flex-direction: row !important;
   align-items: center;
   gap: 10px;
-  font-size: 12px !important;
-  color: var(--muted) !important;
+  font-size: 13px !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
 }
 
 .submit-btn {
