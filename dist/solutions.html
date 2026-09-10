@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Storage Systems & Engineering Solutions | ProRack Storage Solutions</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Display Font: BubbledotICG-FinePos -->
+  <link href="https://db.onlinewebfonts.com/c/8cb707a9b8a73f8a7403336b861c3074?family=BubbledotICG-FinePos" rel="stylesheet" />
+
+  <!-- Font Awesome 6.5.2 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Full-viewport cover video -->
+  <div class="bg">
+    <video class="bg-video" id="bg-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
+      <source src="assets/Video-Project-7.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="page">
+    <!-- Header -->
+    <header class="header">
+      <a href="index.html" class="logo-btn" aria-label="ProRack Home">
+        <img src="assets/logo.webp" alt="ProRack" width="52" height="52" class="logo-img" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-pill" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="solutions.html" class="nav-link active">Solutions Page</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#founder" class="nav-link">Founder</a>
+        <a href="index.html#process" class="nav-link">Process</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop Sign in / Start Project -->
+      <a href="index.html#contact" class="signin-btn">Start Project</a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="burger-btn" aria-label="Toggle Menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <!-- Mobile Menu Overlay & Sheet -->
+    <div class="mobile-overlay" id="mobile-overlay" hidden>
+      <div class="mobile-menu-sheet" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation Menu">
+        <nav class="mobile-nav">
+          <a href="index.html" class="mobile-nav-link">Home</a>
+          <a href="solutions.html" class="mobile-nav-link active">Solutions Page</a>
+          <a href="index.html#about" class="mobile-nav-link">About</a>
+          <a href="index.html#founder" class="mobile-nav-link">Founder's Message</a>
+          <a href="index.html#process" class="mobile-nav-link">Process</a>
+          <a href="index.html#industries" class="mobile-nav-link">Industries</a>
+          <a href="index.html#faq" class="mobile-nav-link">FAQs</a>
+          <a href="index.html#contact" class="mobile-signin-btn">Start Project</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Page Hero Viewport -->
+    <section class="hero-viewport" id="top">
+      <div class="hero">
+        <div class="trust-row anim" style="--d: 0.05s">
+          <div class="avatar-ring avatar-1"><div class="avatar-inner"><i class="fa-brands fa-microsoft"></i></div></div>
+          <div class="avatar-ring avatar-2"><div class="avatar-inner"><i class="fa-brands fa-amazon"></i></div></div>
+          <div class="avatar-ring avatar-3"><div class="avatar-inner"><i class="fa-brands fa-google"></i></div></div>
+          <div class="trust-pill">
+            <span>Automated Racking & PEB Solutions</span>
+          </div>
+        </div>
+
+        <h1 class="headline">
+          <span class="line-1">Storage Engineering</span>
+          <span class="line-2">Catalog & Specifications</span>
+        </h1>
+
+        <p class="subhead anim" style="--d: 0.28s">
+          Explore complete technical specifications, load parameters, and layout designs for Pallet Racking, Industrial Shelving, Mezzanine Floors, Automated AS/RS, and PEB Steel Structures.
+        </p>
+
+        <div class="cta-wrapper anim-pulse" style="--d: 0.4s">
+          <a href="#catalog" class="cta-btn">View Full Portfolio <i class="fa-solid fa-arrow-down" style="margin-left:8px;"></i></a>
+        </div>
+      </div>
+
+      <!-- Stats Footer -->
+      <footer class="stats-footer">
+        <div class="stat-card anim" style="--d: 0.5s" data-target="100" data-suffix="%" data-decimals="0">
+          <div class="stat-icon">&lt;</div>
+          <div class="stat-value">0%</div>
+          <div class="stat-label">Custom Engineered</div>
+        </div>
+        <div class="stat-card anim" style="--d: 0.58s" data-target="99.99" data-suffix="%" data-decimals="2">
+          <div class="stat-icon">%</div>
+          <div class="stat-value">0%</div>
+          <div class="stat-label">Safety Compliance</div>
+        </div>
+        <div class="stat-card anim" style="--d: 0.66s" data-target="5" data-suffix=" Systems" data-decimals="0">
+          <div class="stat-icon">*</div>
+          <div class="stat-value">0 Systems</div>
+          <div class="stat-label">Product Lines</div>
+        </div>
+        <div class="stat-card anim" style="--d: 0.74s" data-target="2.4" data-suffix="M" data-decimals="1">
+          <div class="stat-icon">#</div>
+          <div class="stat-value">0M</div>
+          <div class="stat-label">Sq. Ft. Installed</div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="content-body" id="catalog">
+      <!-- Section 1: Pallet Racking Systems -->
+      <section class="section-block">
+        <div class="section-header">
+          <span class="section-kicker">SYSTEM 01</span>
+          <h2>Heavy-Duty Pallet Racking Systems</h2>
+        </div>
+        <p class="section-text">
+          Engineered for maximum structural integrity, high load capacity, and 100% pallet accessibility. Designed for reach trucks, counterbalanced forklifts, and VNA equipment.
+        </p>
+        <div class="solution-grid" style="margin-top: 30px;">
+          <article class="solution-card">
+            <span class="solution-num">1.1</span>
+            <div class="solution-icon"><i class="fa-solid fa-warehouse"></i></div>
+            <h3>Selective Pallet Racking</h3>
+            <p>100% direct access to every pallet position. Most versatile configuration for dynamic SKU environments.</p>
+          </article>
+
+          <article class="solution-card">
+            <span class="solution-num">1.2</span>
+            <div class="solution-icon"><i class="fa-solid fa-cubes"></i></div>
+            <h3>Double-Deep Racking</h3>
+            <p>Stores pallets 2-deep per aisle entry. Increases pallet storage density by up to 30% compared to standard selective setups.</p>
+          </article>
+
+          <article class="solution-card">
+            <span class="solution-num">1.3</span>
+            <div class="solution-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <h3>Drive-In / Drive-Through Racking</h3>
+            <p>High-density LIFO/FIFO storage ideal for uniform bulk goods, cold storage, and high-volume SKU batches.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section 2: Industrial Shelving -->
+      <section class="section-block">
+        <div class="section-header">
+          <span class="section-kicker">SYSTEM 02</span>
+          <h2>Industrial Shelving & Multi-Tier Systems</h2>
+        </div>
+        <p class="section-text">
+          High-density binning, component drawers, and multi-tier catwalk shelving for fast-moving inventory and order fulfillment centers.
+        </p>
+        <div class="solution-grid" style="margin-top: 30px;">
+          <article class="solution-card">
+            <span class="solution-num">2.1</span>
+            <div class="solution-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+            <h3>Multi-Tier Shelving</h3>
+            <p>Utilizes building height with integrated walkways, staircases, and conveyor drop points.</p>
+          </article>
+
+          <article class="solution-card">
+            <span class="solution-num">2.2</span>
+            <div class="solution-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Heavy Duty Long-Span Shelving</h3>
+            <p>Boltless, adjustable steel shelves engineered for heavy hand-loaded items and automotive spare parts.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section 3: Mezzanine Floor Systems -->
+      <section class="section-block">
+        <div class="section-header">
+          <span class="section-kicker">SYSTEM 03</span>
+          <h2>Structural Mezzanine Floor Systems</h2>
+        </div>
+        <p class="section-text">
+          Custom-engineered structural steel platform floors that double or triple usable area without civil construction.
+        </p>
+        <div class="proof-grid">
+          <div class="proof-copy">
+            <h3>Structural Platform Specifications</h3>
+            <ul class="proof-list" style="margin-top: 16px;">
+              <li><i class="fa-solid fa-check"></i> Floor Load Ratings: 500 kg/m² to 2,000 kg/m²</li>
+              <li><i class="fa-solid fa-check"></i> Column Spans: Up to 12 meters clear grid</li>
+              <li><i class="fa-solid fa-check"></i> Decking Options: Steel chequered plate, wooden ply, or grating</li>
+              <li><i class="fa-solid fa-check"></i> Safety Gate & Pallet Drop Zone Integration</li>
+            </ul>
+          </div>
+          <div class="engineering-note" style="margin: 0;">
+            <span>ENGINEERED FOR HEAVY LOADS</span>
+            <strong>Turn Overhead Airspace into Floor Capacity</strong>
+            <p>Ideal for office quarters, assembly lines, order sorting, and overflow bulk storage.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Automated AS/RS Warehouses -->
+      <section class="section-block">
+        <div class="section-header">
+          <span class="section-kicker">SYSTEM 04</span>
+          <h2>Automated Warehouses & AS/RS Racking</h2>
+        </div>
+        <p class="section-text">
+          Storage structures engineered with millimeter-level tolerances to support high-speed stacker cranes, 3D pallet shuttles, and Autonomous Mobile Robots (AMRs).
+        </p>
+        <div class="solution-grid" style="margin-top: 30px;">
+          <article class="solution-card">
+            <span class="solution-num">4.1</span>
+            <div class="solution-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3>3D Pallet Shuttle Racking</h3>
+            <p>Radio-controlled automated shuttles for high-density, high-throughput pallet storage and retrieval.</p>
+          </article>
+
+          <article class="solution-card">
+            <span class="solution-num">4.2</span>
+            <div class="solution-icon"><i class="fa-solid fa-industry"></i></div>
+            <h3>AS/RS Stacker Crane Structures</h3>
+            <p>High-bay automated racking exceeding 30 meters height with integrated guide rails and PLC controls.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section 5: Interactive Racking Capacity Estimator -->
+      <section class="section-block">
+        <div class="section-header">
+          <span class="section-kicker">INTERACTIVE TOOL</span>
+          <h2>Warehouse Storage Capacity Estimator</h2>
+          <p class="section-text">Estimate your warehouse pallet capacity based on building dimensions.</p>
+        </div>
+
+        <div class="contact-form" style="max-width: 720px; margin: 0 auto;">
+          <div class="fields-grid">
+            <label>Building Clear Height (Meters)
+              <input type="number" id="calc-height" value="10" min="4" max="35" />
+            </label>
+            <label>Floor Area (Sq. Ft.)
+              <input type="number" id="calc-area" value="25000" min="1000" step="1000" />
+            </label>
+            <label>Pallet Load Weight (kg)
+              <input type="number" id="calc-weight" value="1200" min="200" step="100" />
+            </label>
+            <label>System Preference
+              <select id="calc-system">
+                <option value="selective">Selective Pallet Racking</option>
+                <option value="double">Double-Deep Racking</option>
+                <option value="shuttle">Automated Shuttle Racking</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="engineering-note" style="margin-top: 16px;">
+            <span>ESTIMATED CAPACITY SUMMARY</span>
+            <strong id="calc-output-positions">Estimated Pallet Positions: ~3,120 Pallets</strong>
+            <p id="calc-output-density">Storage Density Efficiency: ~78% Floor Area Utilization</p>
+          </div>
+
+          <a href="index.html#contact" class="cta-btn" style="margin-top: 16px;">Request Official CAD Brief <i class="fa-solid fa-arrow-right" style="margin-left:8px;"></i></a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-content">
+          <a href="#top" class="footer-logo"><span>PRO</span>RACK<small>STORAGE SOLUTIONS</small></a>
+          <p>Industrial storage systems, engineered and delivered in India.</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="solutions.html">Solutions Page</a>
+            <a href="index.html#founder">Founder's Message</a>
+            <a href="index.html#faq">FAQs</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="mailto:info@prorackstoragesolutions.com">Email</a>
+          </div>
+          <small>© 2026 ProRack Storage Solutions India Pvt. Ltd.</small>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Floating Corner Chatbot Interface -->
+  <button class="chat-launch" id="chat-launch-btn" aria-label="Open ProRack RFQ Assistant">
+    <i class="fa-solid fa-file-signature"></i>
+    <span>Start RFQ / RFP Brief</span>
+  </button>
+
+  <div class="chat-panel hidden" id="chat-panel" aria-label="ProRack RFQ Assistant">
+    <header class="chat-header">
+      <div class="chat-header-info">
+        <div class="bot-avatar"><i class="fa-solid fa-clipboard-list"></i></div>
+        <div>
+          <strong>ProRack RFQ / RFP Engine</strong>
+          <small><span class="status-dot"></span> Active · Guided Spec Collector</small>
+        </div>
+      </div>
+      <button class="chat-close-btn" id="chat-close-btn" aria-label="Close Chat"><i class="fa-solid fa-xmark"></i></button>
+    </header>
+
+    <div class="chat-body" id="chat-body">
+      <div class="chat-bubble assistant">
+        Welcome to ProRack RFQ & RFP Engine. I can guide you step-by-step through submitting your warehouse dimensions, pallet weights, height clearance, and layout drawings for an official quote.
+      </div>
+      <div class="quick-replies" id="quick-replies">
+        <button class="quick-reply-btn" data-action="start-rfq">📋 Start Guided RFQ/RFP</button>
+        <button class="quick-reply-btn" data-action="upload-doc">📎 Upload Drawing / RFQ File</button>
+        <button class="quick-reply-btn" data-action="ask-question">💬 Ask a Question</button>
+      </div>
+    </div>
+
+    <footer class="chat-footer">
+      <div class="chat-input-row">
+        <label class="file-upload-btn" title="Upload RFQ/RFP Document (.pdf, .dwg, .docx, .xlsx)">
+          <i class="fa-solid fa-paperclip"></i>
+          <input type="file" id="chat-file-input" accept=".pdf,.doc,.docx,.xls,.xlsx,.txt,.dwg,.dxf" />
+        </label>
+        <input type="text" id="chat-input-field" class="chat-input-field" placeholder="Type answer or question..." />
+        <button type="button" id="chat-send-btn" class="chat-send-btn" aria-label="Send Message">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    // Interactive Racking Capacity Estimator logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const calcHeight = document.getElementById('calc-height');
+      const calcArea = document.getElementById('calc-area');
+      const calcSystem = document.getElementById('calc-system');
+      const outputPos = document.getElementById('calc-output-positions');
+      const outputDensity = document.getElementById('calc-output-density');
+
+      function updateCalculator() {
+        if (!calcHeight || !calcArea || !calcSystem || !outputPos || !outputDensity) return;
+
+        const h = parseFloat(calcHeight.value) || 10;
+        const area = parseFloat(calcArea.value) || 25000;
+        const system = calcSystem.value;
+
+        // Base levels from height (assuming 1.8m per level + 0.5m clearance)
+        const levels = Math.max(2, Math.floor(h / 2.1));
+        
+        let multiplier = 0.125; // Selective
+        let density = '75%';
+
+        if (system === 'double') {
+          multiplier = 0.16;
+          density = '82%';
+        } else if (system === 'shuttle') {
+          multiplier = 0.22;
+          density = '90%';
+        }
+
+        const estPositions = Math.round(area * multiplier * levels);
+
+        outputPos.textContent = `Estimated Pallet Positions: ~${estPositions.toLocaleString()} Pallets (${levels} Storage Levels)`;
+        outputDensity.textContent = `Storage Density Efficiency: ~${density} Floor Area Utilization`;
+      }
+
+      [calcHeight, calcArea, calcSystem].forEach(el => {
+        if (el) el.addEventListener('input', updateCalculator);
+      });
+
+      updateCalculator();
+    });
+  </script>
+</body>
+</html>
