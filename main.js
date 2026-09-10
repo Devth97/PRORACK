@@ -1,4 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // --- Force Background Video Autoplay & Fallback ---
+  const bgVideo = document.getElementById('bg-video') || document.querySelector('.bg-video');
+  if (bgVideo) {
+    bgVideo.muted = true;
+    bgVideo.defaultMuted = true;
+    bgVideo.playsInline = true;
+
+    const playVideo = () => {
+      const playPromise = bgVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          document.addEventListener('click', () => {
+            bgVideo.play().catch(() => {});
+          }, { once: true });
+        });
+      }
+    };
+
+    playVideo();
+    bgVideo.addEventListener('loadeddata', playVideo);
+  }
+
   // --- Solution Explorer Data & Switching ---
   const solutionData = [
     {
